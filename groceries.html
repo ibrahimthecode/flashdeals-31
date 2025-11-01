@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,13 +16,11 @@
             --soft-white: #F8F9FA;
             --accent-purple: #6B46C1;
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #0A0E27 0%, #1a1f3a 100%);
@@ -31,7 +28,6 @@
             min-height: 100vh;
             overflow-x: hidden;
         }
-
         body::before {
             content: '';
             position: fixed;
@@ -44,7 +40,6 @@
             pointer-events: none;
             z-index: 0;
         }
-
         .custom-navbar {
             background: rgba(10, 14, 39, 0.95);
             backdrop-filter: blur(10px);
@@ -55,34 +50,28 @@
             z-index: 1000;
             animation: slideDown 0.8s ease-out;
         }
-
         @keyframes slideDown {
             from {
                 transform: translateY(-100%);
                 opacity: 0;
             }
-
             to {
                 transform: translateY(0);
                 opacity: 1;
             }
         }
-
         .navbar-brand img {
             filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.4));
             transition: all 0.4s ease;
         }
-
         .navbar-brand img:hover {
             filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.7));
             transform: scale(1.05);
         }
-
         .container {
             position: relative;
             z-index: 1;
         }
-
         h1 {
             font-family: 'Playfair Display', serif;
             font-size: 4rem;
@@ -97,61 +86,48 @@
             animation: fadeInUp 1s ease-out, shimmer 3s infinite;
             position: relative;
         }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
         @keyframes shimmer {
-
             0%,
             100% {
                 background-position: 0% 50%;
             }
-
             50% {
                 background-position: 100% 50%;
             }
         }
-
         .category-section {
             margin-bottom: 3rem;
             animation: fadeInUp 1s ease-out;
             animation-fill-mode: both;
         }
-
         .category-section:nth-child(1) {
             animation-delay: 0.1s;
         }
-
         .category-section:nth-child(2) {
             animation-delay: 0.2s;
         }
-
         .category-section:nth-child(3) {
             animation-delay: 0.3s;
         }
-
         .category-section:nth-child(4) {
             animation-delay: 0.4s;
         }
-
         .category-section:nth-child(5) {
             animation-delay: 0.5s;
         }
-
         .category-section:nth-child(6) {
             animation-delay: 0.6s;
         }
-
         .card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -160,13 +136,11 @@
             overflow: hidden;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
         .card:hover {
             transform: translateY(-5px);
             border-color: rgba(212, 175, 55, 0.6);
             box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
         }
-
         .category-header {
             background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(107, 70, 193, 0.2) 100%);
             padding: 1.5rem 2rem;
@@ -175,7 +149,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .category-header::before {
             content: '';
             position: absolute;
@@ -186,15 +159,12 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
             transition: left 0.6s ease;
         }
-
         .category-header:hover::before {
             left: 100%;
         }
-
         .category-header:hover {
             background: linear-gradient(135deg, rgba(212, 175, 55, 0.3) 0%, rgba(107, 70, 193, 0.3) 100%);
         }
-
         .category-header h2 {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
@@ -205,29 +175,24 @@
             align-items: center;
             font-weight: 600;
         }
-
         .chevron {
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             font-size: 1.5rem;
             color: var(--gold);
         }
-
         .chevron.rotated {
             transform: rotate(180deg);
         }
-
         .category-content {
-            max-height: 0;
+            max-height: 0; /* Initial state */
             overflow: hidden;
             transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), padding 0.6s ease;
             padding: 0 2rem;
         }
-
         .category-content.active {
-            max-height: 2000px;
+            max-height: 5000px; /* Increased height to accommodate more items */
             padding: 2rem;
         }
-
         /* Product card */
         .product-card {
             background: rgba(255, 255, 255, 0.08);
@@ -237,7 +202,6 @@
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
         }
-
         .product-card::before {
             content: '';
             position: absolute;
@@ -249,17 +213,14 @@
             opacity: 0;
             transition: opacity 0.5s ease;
         }
-
         .product-card:hover::before {
             opacity: 1;
         }
-
         .product-card:hover {
             transform: translateY(-10px) scale(1.02);
             border-color: var(--gold);
             box-shadow: 0 15px 50px rgba(212, 175, 55, 0.4);
         }
-
         .product-card img {
             display: block;
             max-height: 150px;
@@ -269,17 +230,14 @@
             transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
             border-radius: 10px;
         }
-
         .product-card:hover img {
             transform: scale(1.05);
         }
-
         .card-body {
             padding: 1.5rem;
             position: relative;
             z-index: 1;
         }
-
         .card-title {
             font-family: 'Playfair Display', serif;
             font-size: 1.3rem;
@@ -288,7 +246,6 @@
             font-weight: 600;
             min-height: 60px;
         }
-
         .card-text {
             font-size: 1.5rem;
             color: var(--gold);
@@ -296,7 +253,6 @@
             margin-bottom: 1.5rem;
             text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
         }
-
         .btn-success {
             background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
             border: none;
@@ -310,7 +266,6 @@
             text-transform: uppercase;
             font-size: 0.9rem;
         }
-
         .btn-success::before {
             content: '';
             position: absolute;
@@ -323,18 +278,15 @@
             transform: translate(-50%, -50%);
             transition: width 0.6s ease, height 0.6s ease;
         }
-
         .btn-success:hover::before {
             width: 300px;
             height: 300px;
         }
-
         .btn-success:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(212, 175, 55, 0.5);
             background: linear-gradient(135deg, #FFD700 0%, var(--gold) 100%);
         }
-
         .btn-secondary {
             background: linear-gradient(135deg, var(--accent-purple) 0%, #8B5CF6 100%);
             border: none;
@@ -346,25 +298,21 @@
             text-transform: uppercase;
             font-size: 1rem;
         }
-
         .btn-secondary:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(107, 70, 193, 0.5);
             background: linear-gradient(135deg, #8B5CF6 0%, var(--accent-purple) 100%);
         }
-
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
             }
-
             .category-header h2 {
                 font-size: 1.5rem;
             }
         }
     </style>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
@@ -374,10 +322,8 @@
             </a>
         </div>
     </nav>
-
     <div class="container py-5">
         <h1>Groceries</h1>
-
         <!-- Fresh Fruits & Vegetables -->
         <div class="category-section mb-4">
             <div class="card">
@@ -386,7 +332,6 @@
                 </div>
                 <div class="category-content" id="fruits-vegetables">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
-
                         <!-- Fresh Cucumber -->
                         <div class="col">
                             <div class="card h-100 product-card">
@@ -400,7 +345,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Fresh Onion Red -->
                         <div class="col">
                             <div class="card h-100 product-card">
@@ -414,7 +358,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Fresh Sweet Potato -->
                         <div class="col">
                             <div class="card h-100 product-card">
@@ -428,7 +371,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Premium Potato -->
                         <div class="col">
                             <div class="card h-100 product-card">
@@ -443,7 +385,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Fresh Capsicum Mix -->
                         <div class="col">
                             <div class="card h-100 product-card">
@@ -457,7 +398,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Fresh Capsicum Red -->
                         <div class="col">
                             <div class="card h-100 product-card">
@@ -471,7 +411,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Fresh Capsicum Yellow -->
                         <div class="col">
                             <div class="card h-100 product-card">
@@ -485,7 +424,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Fresh Lemon -->
                         <div class="col">
                             <div class="card h-100 product-card">
@@ -499,7 +437,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Fresh Lime -->
                         <div class="col">
                             <div class="card h-100 product-card">
@@ -513,7 +450,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Delmonte Banana -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -527,7 +463,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Fresh Apple Royal Gala -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -541,7 +476,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Pomegranate -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -554,7 +488,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Fresh Apple Red -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -568,7 +501,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Mandarin -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -581,7 +513,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Mango -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -594,7 +525,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Strawberry -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -607,7 +537,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Avocado -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -620,7 +549,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Orange Valencia -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -633,12 +561,10 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- Frozen Goods -->
         <div class="category-section mb-4">
             <div class="card">
@@ -660,7 +586,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Alyoum Fresh Whole Cut Chicken Skinless Bone In, 900G -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -674,7 +599,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Al Ain Fresh Whole Chicken 1 kg -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -688,7 +612,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Sadia Frozen Tender Chicken Breast 1kg -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -702,7 +625,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Prime Tender Chicken Breast 1 kg -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -720,7 +642,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Dairy and Eggs -->
         <div class="category-section mb-4">
             <div class="card">
@@ -743,7 +664,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Al Ain White Eggs Medium 15pcs -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -757,7 +677,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Al Ain Farms Lactose Free UHT Milk 1L -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -771,7 +690,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Nada Greek Yoghurt Plain 160g -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -785,7 +703,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Al Rawabi Full Cream Yoghurt 6 x 90g -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -803,7 +720,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Drinks and Dessert -->
         <div class="category-section mb-4">
             <div class="card">
@@ -825,7 +741,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Lipton Tropical Black Iced Tea Passionfruit & Mango -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -841,7 +756,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Brooklyn Creamery Belgian Chocolate Mini Cone -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -856,7 +770,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Tess Daiquiri Breeze Green Tea -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -869,7 +782,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Brooklyn Creamery Low Calorie Vanilla & Sea Salt Caramel -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -885,7 +797,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Scrunch Nut Cluster -->
                         <div class="col">
                             <div class="product-card card h-100 text-center p-3">
@@ -899,17 +810,14 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="mt-5 text-center">
             <a href="index.html" class="btn btn-secondary">Back to Categories</a>
         </div>
     </div>
-
     <footer class="bg-dark text-light py-4 mt-5 border-top border-gold">
         <div class="container text-center">
             <p>&copy; 2025 FlashDeals-HQ. All rights reserved.</p>
@@ -920,19 +828,14 @@
             </p>
         </div>
     </footer>
-
     <script>
 function toggleCategory(id) {
     const content = document.getElementById(id);
     const chevron = document.getElementById('chevron-' + id);
-
     content.classList.toggle('active');
     chevron.classList.toggle('rotated');
 }
 </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
