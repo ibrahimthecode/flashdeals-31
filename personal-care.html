@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Personal Care - FlashDeals</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css  " rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
     rel="stylesheet">
@@ -220,6 +220,9 @@
       overflow: hidden;
       transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .product-card::before {
@@ -251,6 +254,7 @@
       background: white;
       padding: 1rem;
       transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      flex-shrink: 0; /* Prevents image from shrinking */
     }
 
     .product-card:hover img {
@@ -258,9 +262,12 @@
     }
 
     .card-body {
-      padding: 1.5rem;
+      padding: 1rem 1.5rem 1.5rem; /* Adjusted padding */
       position: relative;
       z-index: 1;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
     }
 
     .card-title {
@@ -270,6 +277,8 @@
       margin-bottom: 1rem;
       font-weight: 600;
       min-height: 60px;
+      display: flex;
+      align-items: center; /* Vertically center title */
     }
 
     .card-text {
@@ -278,6 +287,7 @@
       font-weight: 600;
       margin-bottom: 1.5rem;
       text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+      margin-top: auto; /* Pushes price to the bottom */
     }
 
     .btn-success {
@@ -292,6 +302,7 @@
       overflow: hidden;
       text-transform: uppercase;
       font-size: 0.9rem;
+      margin-top: auto; /* Pushes button to the bottom */
     }
 
     .btn-success::before {
@@ -348,6 +359,10 @@
       .product-card img {
         height: 200px;
       }
+
+      .row-cols-md-3 { /* Adjust grid for mobile */
+        row-cols-md-2; /* Show 2 items per row on medium screens */
+      }
     }
   </style>
 </head>
@@ -371,27 +386,27 @@
           <h2>Health and Vitamins<span class="chevron" id="chevron-health-vitamins">▼</span></h2>
         </div>
         <div class="category-content" id="health-vitamins">
-          <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="row row-cols-1 row-cols-md-3 g-4"> <!-- Changed to 3 columns -->
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/615jgsipThL._AC_SY879_.jpg" class="card-img-top"
+                <img src="  https://m.media-amazon.com/images/I/615jgsipThL._AC_SY879_.jpg  " class="card-img-top"
                   alt="YUM-V'S Glucose Gummies Mixed Fruit">
                 <div class="card-body">
                   <h5 class="card-title">YUM-V'S Glucose Gummies</h5>
                   <p class="card-text">80.63 DHS</p>
-                  <a href="https://amzn.to/4oI4E4C" target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4oI4E4C  " target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
             <!-- Nature's Truth Vegan Turmeric Curcumin Gummies -->
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/716aZeNHSKL._AC_SY679_.jpg" class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/716aZeNHSKL._AC_SY679_.jpg  " class="card-img-top"
                   alt="Nature's Truth Vegan Turmeric Curcumin Gummies">
                 <div class="card-body">
                   <h5 class="card-title">Nature's Truth Vegan Turmeric Curcumin Gummies (70 Count)</h5>
                   <p class="card-text">84.63 DHS</p>
-                  <a href="https://amzn.to/3Ldu1N1" target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/3Ldu1N1  " target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -399,12 +414,12 @@
             <!-- SOLARAY Magnesium Glycinate -->
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/41UnvLWUwFL._AC_SY300_SX300_QL70_ML2_.jpg"
+                <img src="https://m.media-amazon.com/images/I/41UnvLWUwFL._AC_SY300_SX300_QL70_ML2_.jpg  "
                   class="card-img-top" alt="SOLARAY Magnesium Glycinate 350 mg, 120 VegCaps">
                 <div class="card-body">
                   <h5 class="card-title">SOLARAY Magnesium Glycinate 350 mg, 120 VegCaps</h5>
                   <p class="card-text">140.00 DHS</p>
-                  <a href="https://amzn.to/49lXlef" target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/49lXlef  " target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -412,12 +427,12 @@
             <!-- Sports Research Vitamin K2 + D3 -->
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61uhxiVJqCL._AC_SY300_SX300_QL70_ML2_.jpg"
+                <img src="https://m.media-amazon.com/images/I/61uhxiVJqCL._AC_SY300_SX300_QL70_ML2_.jpg  "
                   class="card-img-top" alt="Sports Research Vitamin K2 + D3">
                 <div class="card-body">
                   <h5 class="card-title">Sports Research Vitamin K2 + D3</h5>
                   <p class="card-text">97.00 DHS</p>
-                  <a href="https://amzn.to/47C2EUG" target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/47C2EUG  " target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -425,12 +440,12 @@
             <!-- Sports Research Triple Strength Omega-3 Fish Oil -->
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61dWe19AxkL._AC_SX522_.jpg" class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/61dWe19AxkL._AC_SX522_.jpg  " class="card-img-top"
                   alt="Sports Research Triple Strength Omega 3 Fish Oil">
                 <div class="card-body">
                   <h5 class="card-title">Sports Research Triple Strength Omega-3 Fish Oil (90 ct)</h5>
                   <p class="card-text">169.74 DHS</p>
-                  <a href="https://amzn.to/430Xpwf" target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/430Xpwf  " target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -447,61 +462,61 @@
           <h2>Others<span class="chevron" id="chevron-others">▼</span></h2>
         </div>
         <div class="category-content" id="others">
-          <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="row row-cols-1 row-cols-md-3 g-4"> <!-- Changed to 3 columns -->
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/7137t8JMphL._AC_SX679_.jpg" class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/7137t8JMphL._AC_SX679_.jpg  " class="card-img-top"
                   alt="Dabur Odomos Non-Sticky Mosquito Repellent Cream 100g">
                 <div class="card-body">
                   <h5 class="card-title">Dabur Odomos Non-Sticky Mosquito Repellent Cream 100g</h5>
                   <p class="card-text">17.9 DHS</p>
-                  <a href="https://amzn.to/4htwhvG" target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4htwhvG  " target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61KXyWFGBPL._AC_SX679_PIbundle-15,TopRight,0,0_SH20_.jpg"
+                <img src="https://m.media-amazon.com/images/I/61KXyWFGBPL._AC_SX679_PIbundle-15  ,TopRight,0,0_SH20_.jpg"
                   class="card-img-top" alt="15-Pack Mosquito Repellent Bracelets">
                 <div class="card-body">
                   <h5 class="card-title">15-Pack Mosquito Repellent Bracelets</h5>
                   <p class="card-text">21.87 DHS</p>
-                  <a href="https://amzn.to/47tsavc" target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/47tsavc  " target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
             <div class="col">
   <div class="product-card card h-100 text-center p-3">
-    <img src="https://m.media-amazon.com/images/I/51FxwuXlAyL._AC_SX679_.jpg" class="card-img-top"
+    <img src="https://m.media-amazon.com/images/I/51FxwuXlAyL._AC_SX679_.jpg  " class="card-img-top"
       alt="Lonimia 4Pcs Disposable Bed Sheets for Hotel Portable Travel Bedding Set">
     <div class="card-body">
       <h5 class="card-title">Lonimia 4Pcs Disposable Bed Sheets for Hotel & Travel</h5>
       <p class="card-text">25.65 DHS</p>
-      <a href="https://amzn.to/4oBaNPY" target="_blank" class="btn btn-success">Buy Now</a>
+      <a href="https://amzn.to/4oBaNPY  " target="_blank" class="btn btn-success">Buy Now</a>
     </div>
   </div>
 </div>
 
 <div class="col">
   <div class="product-card card h-100 text-center p-3">
-    <img src="https://m.media-amazon.com/images/I/61GMmdCC4eL._AC_SX300_SY300_QL70_ML2_.jpg" class="card-img-top"
+    <img src="https://m.media-amazon.com/images/I/61GMmdCC4eL._AC_SX300_SY300_QL70_ML2_.jpg  " class="card-img-top"
       alt="25 Pack Disposable Bath Towels 140x70CM Ultra Soft Quick Dry">
     <div class="card-body">
       <h5 class="card-title">25 Pack Disposable Bath Towels (140×70CM)</h5>
       <p class="card-text">75.99 DHS</p>
-      <a href="https://amzn.to/3LdpN8o" target="_blank" class="btn btn-success">Buy Now</a>
+      <a href="https://amzn.to/3LdpN8o  " target="_blank" class="btn btn-success">Buy Now</a>
     </div>
   </div>
 </div>
 
 <div class="col">
   <div class="product-card card h-100 text-center p-3">
-    <img src="https://m.media-amazon.com/images/I/61HtOkgIy1L._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
+    <img src="https://m.media-amazon.com/images/I/61HtOkgIy1L._AC_SY300_SX300_QL70_ML2_.jpg  " class="card-img-top"
       alt="9 Pcs Bag Organizer Set Travel Cubes Waterproof Luggage Organizer">
     <div class="card-body">
       <h5 class="card-title">9 Pcs Bag Organizer Set for Travel (Waterproof)</h5>
       <p class="card-text">49.00 DHS</p>
-      <a href="https://amzn.to/47fNIfZ" target="_blank" class="btn btn-success">Buy Now</a>
+      <a href="https://amzn.to/47fNIfZ  " target="_blank" class="btn btn-success">Buy Now</a>
     </div>
   </div>
 </div>
@@ -539,7 +554,7 @@
       activeCategory = categoryId;
     }
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js  "></script>
 </body>
 
 </html>
