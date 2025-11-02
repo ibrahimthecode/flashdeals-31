@@ -201,6 +201,9 @@
             overflow: hidden;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         .product-card::before {
             content: '';
@@ -225,18 +228,22 @@
             display: block;
             max-height: 150px;
             width: auto;
-            margin: 0 auto;
+            margin: 1.5rem auto 1rem; /* Added margin-top and bottom */
             object-fit: contain;
             transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
             border-radius: 10px;
+            flex-shrink: 0; /* Prevents image from shrinking */
         }
         .product-card:hover img {
             transform: scale(1.05);
         }
         .card-body {
-            padding: 1.5rem;
+            padding: 1rem 1.5rem 1.5rem; /* Adjusted padding */
             position: relative;
             z-index: 1;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
         .card-title {
             font-family: 'Playfair Display', serif;
@@ -245,6 +252,8 @@
             margin-bottom: 1rem;
             font-weight: 600;
             min-height: 60px;
+            display: flex;
+            align-items: center; /* Vertically center title */
         }
         .card-text {
             font-size: 1.5rem;
@@ -252,6 +261,7 @@
             font-weight: 600;
             margin-bottom: 1.5rem;
             text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            margin-top: auto; /* Pushes price to the bottom */
         }
         .btn-success {
             background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
@@ -265,6 +275,7 @@
             overflow: hidden;
             text-transform: uppercase;
             font-size: 0.9rem;
+            margin-top: auto; /* Pushes button to the bottom */
         }
         .btn-success::before {
             content: '';
@@ -309,6 +320,10 @@
             }
             .category-header h2 {
                 font-size: 1.5rem;
+            }
+
+            .row-cols-md-3 { /* Adjust grid for mobile */
+                row-cols-md-2; /* Show 2 items per row on medium screens */
             }
         }
     </style>
@@ -560,7 +575,6 @@
     </div>
   </div>
 </div>
-
 <div class="col">
   <div class="product-card card h-100 text-center p-3">
     <img src="https://m.media-amazon.com/images/I/319ToUBGlNL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
@@ -572,7 +586,6 @@
     </div>
   </div>
 </div>
-
 <div class="col">
   <div class="product-card card h-100 text-center p-3">
     <img src="https://m.media-amazon.com/images/I/51FFwVoAVdL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
@@ -584,7 +597,6 @@
     </div>
   </div>
 </div>
-
 <div class="col">
   <div class="product-card card h-100 text-center p-3">
     <img src="https://m.media-amazon.com/images/I/51APkffHuYL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
@@ -607,7 +619,6 @@
     </div>
   </div>
 </div>
-
 <div class="col">
   <div class="product-card card h-100 text-center p-3">
     <img src="https://m.media-amazon.com/images/I/71oyzfljWIL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
@@ -720,7 +731,6 @@
                 </div>
                 <div class="category-content" id="Spices">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
-                        
                         <!-- Example Product: Black Pepper -->
                         <div class="col">
   <div class="product-card card h-100 text-center p-3">
@@ -733,7 +743,6 @@
     </div>
   </div>
 </div>
-
 <div class="col">
   <div class="product-card card h-100 text-center p-3">
     <img src="https://m.media-amazon.com/images/I/71S-OYVblkL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
@@ -745,7 +754,6 @@
     </div>
   </div>
 </div>
-
 <div class="col">
   <div class="product-card card h-100 text-center p-3">
     <img src="https://m.media-amazon.com/images/I/61fDxGys6DL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
@@ -757,7 +765,6 @@
     </div>
   </div>
 </div>
-
                     </div>
                 </div>
             </div>
@@ -970,5 +977,3 @@ function toggleCategory(id) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
