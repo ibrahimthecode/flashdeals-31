@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Household Appliances - FlashDeals</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css    " rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
     rel="stylesheet"> <!-- Updated Font -->
@@ -219,6 +219,7 @@
       transform: rotate(180deg);
     }
 
+    /* Fixed CSS for category content height */
     .category-content {
       max-height: 0;
       overflow: hidden;
@@ -227,7 +228,7 @@
     }
 
     .category-content.active {
-      max-height: 2000px; /* Adjust if needed based on content */
+      max-height: none; /* Changed from 2000px to none */
       padding: 2rem;
     }
 
@@ -377,8 +378,9 @@
         font-size: 1.5rem;
       }
 
-      .row-cols-md-3 { /* Adjust grid for mobile */
-        row-cols-md-2; /* Show 2 items per row on medium screens */
+      /* Adjust grid for mobile */
+      .row-cols-md-3 {
+          row-cols-md-2; /* Show 2 items per row on medium screens */
       }
     }
   </style>
@@ -405,47 +407,47 @@
           <div class="row row-cols-1 row-cols-md-3 g-4"> <!-- Changed to 3 columns -->
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="    https://m.media-amazon.com/images/I/81O6ThhCIJL._AC_SL1500_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/81O6ThhCIJL._AC_SL1500_.jpg" class="card-img-top"
                   alt="Clorox Toilet Cleaner Fresh Scent 2+1 Free 709ml">
                 <div class="card-body">
                   <h5 class="card-title">Clorox Toilet Cleaner Fresh Scent 2+1 Free (709ml)</h5>
                   <p class="card-text">35.70 DHS</p>
-                  <a href="https://amzn.to/3Jx77Qn    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/3Jx77Qn" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/714Sw4bVyTL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/714Sw4bVyTL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Dettol Surface Disinfectant Spray 500ml x 2">
                 <div class="card-body">
                   <h5 class="card-title">Dettol Surface Disinfectant Spray (500ml x 2)</h5>
                   <p class="card-text">25.00 DHS</p>
-                  <a href="https://amzn.to/3Lgqk9y    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/3Lgqk9y" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/711JojJXgoL._AC_SX679_PIbundle-2    ,TopRight,0,0_SH20_.jpg" class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/711JojJXgoL._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg" class="card-img-top"
                   alt="Fairy Lemon Liquid Dishwashing Soap 600ml x 2">
                 <div class="card-body">
                   <h5 class="card-title">Fairy Lemon Liquid Dishwashing Soap (600ml x 2)</h5>
                   <p class="card-text">13.50 DHS</p>
-                  <a href="https://amzn.to/4qungGO    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4qungGO" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71MQ3A51-FL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71MQ3A51-FL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Fairy 1-Step Clean Plus Automatic Diswhasher Tablets, Effective on Dried-on Grease without the Pre-Rinse, 70 Tabs">
                 <div class="card-body">
                   <h5 class="card-title">Fairy 1-Step Clean Plus Automatic Diswhasher Tablets, Effective on Dried-on Grease without the Pre-Rinse, 70 Tabs</h5>
                   <p class="card-text">AED75.94</p>
-                  <a href="https://amzn.to/3Lk6fz5    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/3Lk6fz5" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -463,120 +465,120 @@
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71200h5gbTL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71200h5gbTL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Comfort Concentrated Fabric Softener, Royal Amber, Celebration Limited Edition for 30 Days of Freshness, 895ml">
                 <div class="card-body">
                   <h5 class="card-title">Comfort Concentrated Fabric Softener, Royal Amber, Celebration Limited Edition for 30 Days of Freshness, 895ml</h5>
                   <p class="card-text">None</p>
-                  <a href="https://amzn.to/4nya1Co    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4nya1Co" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61c6OmFMQ5L._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/61c6OmFMQ5L._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Clorox Liquid Bleach 3.78L, Kills 99.9% of Viruses and Bacteria, 48 Hours Prevents Bacteria Growth, Removes Stains">
                 <div class="card-body">
                   <h5 class="card-title">Clorox Liquid Bleach 3.78L, Kills 99.9% of Viruses and Bacteria, 48 Hours Prevents Bacteria Growth, Removes Stains</h5>
                   <p class="card-text">AED19.45</p>
-                  <a href="https://amzn.to/48XXC7d    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/48XXC7d" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61bPVj3WTjL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/61bPVj3WTjL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Clorox Mold &amp; Mildew Remover spray with bleach, 750ml, Kills 99.9% Of Germs, 100% Destroys Mold and Mildew">
                 <div class="card-body">
                   <h5 class="card-title">Clorox Mold &amp; Mildew Remover spray with bleach, 750ml, Kills 99.9% Of Germs, 100% Destroys Mold and Mildew</h5>
                   <p class="card-text">AED16.00</p>
-                  <a href="https://amzn.to/43FjYXq    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/43FjYXq" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61niamygBrL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/61niamygBrL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Clorox Kitchen Spray Cleaner Lemon, 750ml, Bleach Free, Kills 99.9% of Germs, 100% Grease and Grime Remover">
                 <div class="card-body">
                   <h5 class="card-title">Clorox Kitchen Spray Cleaner Lemon, 750ml, Bleach Free, Kills 99.9% of Germs, 100% Grease and Grime Remover</h5>
                   <p class="card-text">AED18.25</p>
-                  <a href="https://amzn.to/3Jz4P32    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/3Jz4P32" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71-B7S1PjwL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71-B7S1PjwL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Clorox Scentiva Multi Surface Spray Cleaner 500ml, Madagascar Citrus Grove, Bleach Free, Kills 99.9% of Viruses and Bacteria">
                 <div class="card-body">
                   <h5 class="card-title">Clorox Scentiva Multi Surface Spray Cleaner 500ml, Madagascar Citrus Grove, Bleach Free, Kills 99.9% of Viruses and Bacteria</h5>
                   <p class="card-text">AED 21.50</p>
-                  <a href="https://amzn.to/3X7EOuR    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/3X7EOuR" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71Dl55gl6WL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71Dl55gl6WL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Clorox Disinfecting Wipes, 35 Wet Wipes, Crisp Lemon, Kills Viruses and Bacteria, Bleach Free">
                 <div class="card-body">
                   <h5 class="card-title">Clorox Disinfecting Wipes, 35 Wet Wipes, Crisp Lemon, Kills Viruses and Bacteria, Bleach Free</h5>
                   <p class="card-text">AED16.00</p>
-                  <a href="https://amzn.to/4qyfLi5    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4qyfLi5" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61MvnddG04L._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/61MvnddG04L._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Fine Kitchen Super Towel Pro, 4 Rolls 60 Sheets x 3 Ply Paper Tissue">
                 <div class="card-body">
                   <h5 class="card-title">Fine Kitchen Super Towel Pro, 4 Rolls 60 Sheets x 3 Ply Paper Tissue</h5>
                   <p class="card-text">AED13.80</p>
-                  <a href="https://amzn.to/3Lh3BtX    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/3Lh3BtX" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71Bg-HY3pOL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71Bg-HY3pOL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Jif Multipurpose Lemon Cleaning Cream 500ml + Scrub Daddy 1 Piece">
                 <div class="card-body">
                   <h5 class="card-title">Jif Multipurpose Lemon Cleaning Cream 500ml + Scrub Daddy 1 Piece</h5>
                   <p class="card-text">None</p>
-                  <a href="https://amzn.to/4qFtFyX    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4qFtFyX" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/81Th7-jpkXL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/81Th7-jpkXL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Vileda Rainbow Medium Foam Sponge Scourer, Eco-Friendly, Comfortable Grip, Value Pack 10 Pcs, Multi Colours">
                 <div class="card-body">
                   <h5 class="card-title">Vileda Rainbow Medium Foam Sponge Scourer, Eco-Friendly, Comfortable Grip, Value Pack 10 Pcs, Multi Colours</h5>
                   <p class="card-text">None</p>
-                  <a href="https://amzn.to/4qFvKLs    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4qFvKLs" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/81ZKRbyGqkL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/81ZKRbyGqkL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Ariel Lavender Freshness Laundry Detergent Power Gel 1.8 x 2, Dual Pack">
                 <div class="card-body">
                   <h5 class="card-title">Ariel Lavender Freshness Laundry Detergent Power Gel 1.8 x 2, Dual Pack</h5>
                   <p class="card-text">AED37.80</p>
-                  <a href="https://amzn.to/4qChOSb    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4qChOSb" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -595,35 +597,35 @@
           <div class="row row-cols-1 row-cols-md-3 g-4"> <!-- Changed to 3 columns -->
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61pEC1TO8gL._AC_SL1500_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/61pEC1TO8gL._AC_SL1500_.jpg" class="card-img-top"
                   alt="Packwell Disposable plastic Plates 25 Pieces 10 inch">
                 <div class="card-body">
                   <h5 class="card-title">Packwell Disposable Plastic Plates 25 Pieces (10")</h5>
                   <p class="card-text">8.25 DHS</p>
-                  <a href="https://amzn.to/4hvrzO2    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4hvrzO2" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61cAZxvHJvL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/61cAZxvHJvL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Falcon Vinyl Gloves - Clear Powder Free Large (2 Packs x 100 Pieces)">
                 <div class="card-body">
                   <h5 class="card-title">Falcon Vinyl Gloves - Clear Powder Free Large (2 Packs x 100 Pieces)</h5>
                   <p class="card-text">None</p>
-                  <a href="https://amzn.to/47lrYiL    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/47lrYiL" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/61xh30e+XbL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/61xh30e+XbL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Eatyware Zipper Sandwich Bags 50-Pieces, 16.5 cm x14.9 cm Size">
                 <div class="card-body">
                   <h5 class="card-title">Eatyware Zipper Sandwich Bags 50-Pieces, 16.5 cm x14.9 cm Size</h5>
                   <p class="card-text">AED3.95</p>
-                  <a href="https://amzn.to/43MaWrC    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/43MaWrC" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -642,105 +644,105 @@
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/81gPfpKgOmL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/81gPfpKgOmL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Colgate Toothpaste Advanced White, Whitening Toothpaste, 2x100 ml, 2 Pack">
                 <div class="card-body">
                   <h5 class="card-title">Colgate Toothpaste Advanced White, Whitening Toothpaste, 2x100 ml, 2 Pack</h5>
                   <p class="card-text">AED9.80</p>
-                  <a href="https://amzn.to/4oI4bPI    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4oI4bPI" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71vsyaaZCaL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71vsyaaZCaL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Colgate Extra Clean Medium Toothbrush, Pack of 4">
                 <div class="card-body">
                   <h5 class="card-title">Colgate Extra Clean Medium Toothbrush, Pack of 4</h5>
                   <p class="card-text">AED10.00</p>
-                  <a href="https://amzn.to/4hOyRwv    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4hOyRwv" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71gHXCcUysL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71gHXCcUysL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Dettol Sensitive Liquid Handwash Pump, Lavender &amp; White Musk Scent, 200ml x 3">
                 <div class="card-body">
                   <h5 class="card-title">Dettol Sensitive Liquid Handwash Pump, Lavender &amp; White Musk Scent, 200ml x 3</h5>
                   <p class="card-text">AED22.99</p>
-                  <a href="https://amzn.to/4okKuhj    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4okKuhj" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71EMEFYVUFL._AC_SY300_SX300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71EMEFYVUFL._AC_SY300_SX300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Dettol Skincare Handwash Liquid Soap Pump Rose &amp; Sakura Blossom Fragrance, 200ml x3">
                 <div class="card-body">
                   <h5 class="card-title">Dettol Skincare Handwash Liquid Soap Pump Rose &amp; Sakura Blossom Fragrance, 200ml x3</h5>
                   <p class="card-text">AED23.99</p>
-                  <a href="https://amzn.to/4okbBZH    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4okbBZH" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/611nDhKUY4L._AC_SL1500_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/611nDhKUY4L._AC_SL1500_.jpg" class="card-img-top"
                   alt="Packwell Disposable plastic Plates 25 Pieces 9 inch">
                 <div class="card-body">
                   <h5 class="card-title">Packwell Disposable Plastic Plates 25 Pieces (9")</h5>
                   <p class="card-text">7.50 DHS</p>
-                  <a href="https://amzn.to/47qRVw0    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/47qRVw0" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71V-ZDpjkKL._AC_SX300_SY300_QL70_ML2_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71V-ZDpjkKL._AC_SX300_SY300_QL70_ML2_.jpg" class="card-img-top"
                   alt="Packwell Plastic HD Disposable Table Spoon 50 Pieces Black">
                 <div class="card-body">
                   <h5 class="card-title">Packwell Plastic HD Disposable Table Spoon 50 Pieces (Black)</h5>
                   <p class="card-text">3.50 DHS</p>
-                  <a href="https://amzn.to/4qzbvyW    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4qzbvyW" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/615uZzVLUPL._AC_SX522_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/615uZzVLUPL._AC_SX522_.jpg" class="card-img-top"
                   alt="Hotpack Disposable Lunch Box Microwavable 750ml with Lid 8+2 Free">
                 <div class="card-body">
                   <h5 class="card-title">Hotpack Disposable Lunch Box 750ml (8+2 Free Pack)</h5>
                   <p class="card-text">10.90 DHS</p>
-                  <a href="https://amzn.to/3Wz3UTm    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/3Wz3UTm" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71JPvrSyNBL._AC_SL1500_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71JPvrSyNBL._AC_SL1500_.jpg" class="card-img-top"
                   alt="Hotpack Disposable Paper Cup 6 ounce 150 Pieces">
                 <div class="card-body">
                   <h5 class="card-title">Hotpack Disposable Paper Cup 6oz (150pcs Offer Pack)</h5>
                   <p class="card-text">17.65 DHS</p>
-                  <a href="https://amzn.to/3Lgt72s    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/3Lgt72s" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71PCpTWWyvL._AC_SL1500_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71PCpTWWyvL._AC_SL1500_.jpg" class="card-img-top"
                   alt="Packwell Black MD Fork Disposable Plastic Fork 50 Pieces">
                 <div class="card-body">
                   <h5 class="card-title">Packwell Black MD Fork Disposable Plastic Fork 50 Pieces</h5>
                   <p class="card-text">3.50 DHS</p>
-                  <a href="https://amzn.to/47fHM6D    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/47fHM6D" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -760,23 +762,23 @@
           <div class="row row-cols-1 row-cols-md-3 g-4"> <!-- Changed to 3 columns -->
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/71aHRrWYL6L._AC_SX679_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/71aHRrWYL6L._AC_SX679_.jpg" class="card-img-top"
                   alt="BananaHome Mosquito Repellent Citronella Incense Sticks with Holder">
                 <div class="card-body">
                   <h5 class="card-title">BananaHome Citronella Incense Sticks (120pcs)</h5>
                   <p class="card-text">56.00 DHS</p>
-                  <a href="https://amzn.to/4nqWX1o    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/4nqWX1o" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="product-card card h-100 text-center p-3">
-                <img src="https://m.media-amazon.com/images/I/715yf6oy7eL._AC_SX522_.jpg    " class="card-img-top"
+                <img src="https://m.media-amazon.com/images/I/715yf6oy7eL._AC_SX522_.jpg" class="card-img-top"
                   alt="HOMEZONE Fleece Filter Bags 4 Pack">
                 <div class="card-body">
                   <h5 class="card-title">HOMEZONE Filter Bags (4 Pack)</h5>
                   <p class="card-text">41.00 DHS</p>
-                  <a href="https://amzn.to/47JRYEp    " target="_blank" class="btn btn-success">Buy Now</a>
+                  <a href="https://amzn.to/47JRYEp" target="_blank" class="btn btn-success">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -820,7 +822,7 @@
         activeCategory = categoryId;
       }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
